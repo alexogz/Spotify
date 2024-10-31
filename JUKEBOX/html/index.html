@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div id="recuadroRojo" class="recuadro">
+            <h2>Canción actual</h2>
+            <img id="albumCover" src="default.jpg" alt="Portada" width="100">
+            <p id="songTitle">Título de la canción</p>
+            <p id="artist">Artista</p>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="back()">Back</button>
+            <button onclick="forward()">Forward</button>
+            <input type="range" id="songProgress" min="0" max="100" value="0" onchange="seek()">
+        </div>
+        <div id="recuadroAzul" class="recuadro">
+            <h2>Lista de canciones</h2>
+            <ul id="playlist"></ul>
+        </div>
+        <div id="recuadroAmarillo" class="recuadro">
+            <h2>Emisoras de radio</h2>
+            <ul id="radioStations">
+            </ul>
+        </div>
+        <div id="recuadroVerde" class="recuadro">
+            <h2>Controles de sonido</h2>
+            <label for="volumeControl">Volumen</label>
+            <input type="range" id="volumeControl" min="0" max="100" value="50" oninput="adjustVolume(this.value)">
+            
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="../javascript/srcipts.js"></script>
+</body>
+</html>

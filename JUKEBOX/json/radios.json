@@ -1,0 +1,22 @@
+{
+    "radios": [
+        {
+            "frequency": "100",
+            "tittle": "Radio Marca",
+            "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_NACIONAL.mp3",
+            "id": 5
+        },
+        {
+            "frequency": "93.9",
+            "tittle": "Los 40",
+            "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/Los40.mp3",
+            "id": 6
+        },
+        {
+            "frequency": "94.7",
+            "tittle": "Cadena Ser",
+            "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3",
+            "id": 7
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.recuadro {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 2);
+}
+
+#recuadroRojo { background-color: hsla(0, 100%, 50%, 1);
+    background-image: radial-gradient(circle at 40% 20%, hsla(28, 100%, 74%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 0%, hsla(189, 100%, 56%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 50%, hsla(355, 100%, 93%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, hsla(340, 100%, 76%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 100%, hsla(22, 100%, 77%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 100%, hsla(242, 100%, 70%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 0%, hsla(343, 100%, 76%, 1) 0%, transparent 50%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal, normal;
+}
+#recuadroAzul { background-color: hsla(259, 84%, 37%, 1);
+    background-image: radial-gradient(circle at 20% 55%, hsla(248, 82%, 99%, 1) 13%, transparent 67%), radial-gradient(circle at 26% 19%, hsla(318, 83%, 77%, 1) 16%, transparent 58%), radial-gradient(circle at 37% 0%, hsla(302, 95%, 45%, 1) 2%, transparent 60%), radial-gradient(circle at 38% 72%, hsla(210, 87%, 65%, 1) 19%, transparent 85%), radial-gradient(circle at 39% 60%, hsla(317, 98%, 84%, 1) 5%, transparent 61%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+} 
+#recuadroAmarillo { background-color: hsla(60.882352941178326, 0%, 96%, 1);
+    background-image: radial-gradient(circle at 64% 12%, hsla(63.5294117647059, 52%, 85%, 1) 6.688754566361296%, transparent 44.98438254159411%), radial-gradient(circle at 86% 50%, hsla(285.88235294117646, 52%, 85%, 1) 6.688754566361296%, transparent 44.98438254159411%);
+    background-blend-mode: darken, normal;
+} 
+#recuadroVerde { background-color: hsla(119, 77%, 83%, 1);
+    background-image: radial-gradient(circle at 5% 1%, hsla(196, 76%, 61%, 1) 7%, transparent 84%), radial-gradient(circle at 7% 81%, hsla(130, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 11% 29%, hsla(159, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 39% 52%, hsla(95, 93%, 64%, 1) 6%, transparent 68%), radial-gradient(circle at 90% 50%, hsla(64, 94%, 89%, 1) 2%, transparent 85%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+} 
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+button:hover {
+    transform: translateY(-3px);
+  }
+  
+button:span {
+    color: #aaa;
+}
+
+
